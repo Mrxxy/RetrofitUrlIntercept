@@ -2,7 +2,23 @@
 ---
 ### 让 Retrofit 同时支持多个 BaseUrl 以及动态改变 BaseUrl
 
-## 使用
+## Download
+### Step1
+在项目级build.gradle文件添加
+```
+allprojects {
+  repositories {
+    ...
+    maven { url 'https://jitpack.io' }
+  }
+}
+```
+### Step2
+```
+implementation 'com.github.Mrxxy:RetrofitUrlIntercept:1.0.0'
+```
+
+## Usage
 
 ### Step1
 ```
@@ -28,5 +44,3 @@ public interface ApiService {
      Observable<ResponseBody> getBook(@Path("id") int id);
 }
 ```
-
-
