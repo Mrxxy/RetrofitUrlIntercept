@@ -15,7 +15,7 @@ allprojects {
 ```
 ### Step2
 ```
-implementation 'com.github.Mrxxy:RetrofitUrlIntercept:1.0.0'
+implementation 'com.github.Mrxxy:RetrofitUrlIntercept:1.0.1'
 ```
 
 ## Usage
