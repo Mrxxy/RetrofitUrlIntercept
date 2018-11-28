@@ -12,7 +12,7 @@ import java.util.List;
 
 public class BaseUrlIntercept implements Interceptor {
     private static final String TAG = BaseUrlIntercept.class.getSimpleName();
-    private static final String DOMAIN_NAME = "domain-name";
+    private static final String DOMAIN_NAME = "Domain-Name";
 
     @Override
     public Response intercept(Chain chain) throws IOException {
@@ -33,7 +33,8 @@ public class BaseUrlIntercept implements Interceptor {
             HttpUrl newUrl = httpUrl.newBuilder()
                     .scheme(targetDomain.scheme())
                     .host(targetDomain.host())
-                    .port(targetDomain.port()).build();
+                    .port(targetDomain.port())
+                    .build();
             return chain.proceed(newBuilder.url(newUrl).build());
         }
         return chain.proceed(request);
