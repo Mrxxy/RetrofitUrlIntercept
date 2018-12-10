@@ -1,5 +1,7 @@
+[![](https://jitpack.io/v/Mrxxy/RetrofitUrlIntercept.svg)](https://jitpack.io/#Mrxxy/RetrofitUrlIntercept)
+
 ## RetrofitUrlIntercept
----
+
 ### 让 Retrofit 同时支持多个 BaseUrl 以及动态改变 BaseUrl
 
 ## Download
